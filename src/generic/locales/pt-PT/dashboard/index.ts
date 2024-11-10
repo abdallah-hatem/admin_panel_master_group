@@ -1,0 +1,17 @@
+export const ptPT_dashboard = {
+  'app.dashboard.overview.totalSales': 'Total de Vendas',
+  'app.dashboard.overview.visits': 'Número de Visitas',
+  'app.dashboard.overview.payments': 'Número de Pagamentos',
+  'app.dashboard.overview.operationalEffect': 'Efeito das Atividades Operacionais',
+  'app.dashboard.overview.wowChange': 'Comparação Semanal',
+  'app.dashboard.overview.dodChange': 'Comparação Diária',
+  'app.dashboard.overview.dailySales': 'Vendas Diárias',
+  'app.dashboard.overview.visits.dailyVisits': 'Visitas Diárias',
+  'app.dashboard.overview.conversionRate': 'Taxa de Conversão',
+  'app.dashboard.salePercent.proportionOfSales': 'Proporção das Categorias de Vendas',
+  'app.dashboard.salePercent.all': 'Todos',
+  'app.dashboard.salePercent.online': 'Online',
+  'app.dashboard.salePercent.offline': 'Offline',
+  'app.dashboard.timeline.traffic': 'Tráfego de Visitantes',
+  'app.dashboard.timeline.payments': 'Número de Pagamentos',
+};
