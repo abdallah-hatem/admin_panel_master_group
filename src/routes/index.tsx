@@ -11,17 +11,20 @@ import { useRoutes } from 'react-router-dom';
 import NotFoundPage from '@/generic/pages/404';
 import Home from '@/generic/pages/home';
 import LayoutPage from '@/generic/pages/layout';
-import LoginPage from '@/generic/pages/login';
+import LoginPage from '@/generic/pages/auth';
 import ProfilePage from '@/generic/pages/profile';
 import WrapperRouteComponent from '@/generic/routes/config';
+import Register from '@/generic/pages/register';
 
 const routeList: RouteObject[] = [
   {
     path: '/login',
-
     element: <WrapperRouteComponent element={<LoginPage />} titleId="title.login" />,
   },
-
+  {
+    path: '/register',
+    element: <WrapperRouteComponent element={<Register />} titleId="title.login" />,
+  },
   {
     path: '/',
     element: <WrapperRouteComponent element={<LayoutPage />} titleId="" />,
@@ -34,13 +37,12 @@ const routeList: RouteObject[] = [
         path: 'dashboard',
         element: <WrapperRouteComponent element={<Home />} titleId="title.dashboard" />,
       },
-
       ///////////////// Profile /////////////////
       {
         path: 'profile',
         element: <WrapperRouteComponent element={<ProfilePage />} titleId="title.profile" auth />,
       },
-
+      ///////////////// Not Found /////////////////
       {
         path: '*',
         element: <WrapperRouteComponent element={<NotFoundPage />} titleId="title.notFount" />,
